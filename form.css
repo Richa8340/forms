@@ -1,0 +1,89 @@
+/* Custom Color Palette */
+:root {
+    --primary-bg: #f0f4f8;
+    --section-bg: #ffffff;
+    --input-bg: #e9ecef;
+    --border-color: #ccc;
+    --button-bg: #007bff;
+    --button-color: #ffffff;
+}
+
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-bg);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    background-color: var(--section-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Section Headers */
+h2, h3 {
+    color: #333;
+}
+
+/* Form Sections */
+.form-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--section-bg);
+}
+
+/* Form Input Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Form Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="color"],
+input[type="date"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+}
+
+/* Custom Checkbox Style */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darken(var(--button-bg), 10%);
+}
